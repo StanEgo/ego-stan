@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParseGen", "ParseGen.csproj", "{4019882E-B1C0-4327-ABC5-6DE531D24E30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4019882E-B1C0-4327-ABC5-6DE531D24E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4019882E-B1C0-4327-ABC5-6DE531D24E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4019882E-B1C0-4327-ABC5-6DE531D24E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4019882E-B1C0-4327-ABC5-6DE531D24E30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A228CAA4-3EE8-4016-9EEB-AD157E7A3A6A}
+	EndGlobalSection
+EndGlobal
