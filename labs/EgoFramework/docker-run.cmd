@@ -1,0 +1,1 @@
+docker run -it --name=ego-framework --rm -v e:/OneDrive/Ego/Framework/ego:/home ego-framework
