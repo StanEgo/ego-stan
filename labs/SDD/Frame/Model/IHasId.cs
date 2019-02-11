@@ -1,8 +1,7 @@
 ﻿namespace SDD.Frame.Model
 {
     /// <summary>
-    /// This interface defines identified entities by using a
-    /// <see cref="Id"/> property.
+    /// Defines that entity has an unique <see cref="Id"/>.
     /// </summary>
     /// 
     /// <typeparam name="TKey">
@@ -10,6 +9,9 @@
     /// </typeparam>
     public interface IHasId<TKey>
     {
+        /// <summary>
+        /// Unique entity identifier.
+        /// </summary>
         TKey Id { get; set; }
     }
 }
