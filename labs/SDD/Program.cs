@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SDD.Application.Model;
+using SDD.Team.Security;
 
 namespace SDD
 {
@@ -6,7 +7,7 @@ namespace SDD
     {
         static void Main(string[] args)
         {
-            
+            var factory = new SimpleEntityFactory<IRole>();
         }
     }
 }
