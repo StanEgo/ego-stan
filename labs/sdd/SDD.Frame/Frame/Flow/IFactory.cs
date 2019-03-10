@@ -8,9 +8,9 @@ namespace SDD.Frame.Flow
     public interface IFactory
     {
         /// <summary>
-        /// Create instance of <typeparamref name="TEntity"/>.
+        /// Create instance of <typeparamref name="TContract"/>.
         /// </summary>
-        TEntity Create<TEntity>();
+        TContract Create<TContract>();
 
         /// <summary>
         /// Create instance of <paramref name="type"/>.
