@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SDD.Frame
+namespace SDD.Frame.Flow
 {
     /// <summary>
     /// Instance creation.
