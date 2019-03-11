@@ -5,4 +5,8 @@
     <RootNamespace>SDD</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>SDD.Frame.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>

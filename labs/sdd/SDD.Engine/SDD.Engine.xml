@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SDD.Engine</name>
+    </assembly>
+    <members>
+        <member name="T:SDD.Application.Model.IBaseEntity`1">
+            <summary>
+            Basic entity contract.
+            </summary>
+        </member>
+        <member name="T:SDD.Security.IRole">
+            <summary>
+            Security role interface.
+            </summary>
+        </member>
+    </members>
+</doc>

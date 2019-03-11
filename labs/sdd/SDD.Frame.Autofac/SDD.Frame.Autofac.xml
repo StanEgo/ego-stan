@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SDD.Frame.Autofac</name>
+    </assembly>
+    <members>
+        <member name="T:SDD.Application.Flow.AutofacFactory">
+            <summary>
+            <see cref="T:SDD.Application.Flow.IFactory"/> implemented using Autofac IoC library.
+            </summary>
+        </member>
+        <member name="M:SDD.Application.Flow.AutofacFactory.#ctor(Autofac.IContainer)">
+            <summary>
+            Construct.
+            </summary>
+        </member>
+        <member name="M:SDD.Application.Flow.AutofacFactory.SDD#Application#Flow#IFactory#Create``1">
+            <inheritdoc />
+        </member>
+        <member name="M:SDD.Application.Flow.AutofacFactory.SDD#Application#Flow#IFactory#Create(System.Type)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

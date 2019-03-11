@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SDD.Frame</name>
+    </assembly>
+    <members>
+        <member name="T:SDD.Application.Composition.ApplicationComposition">
+            <summary>
+            TODO:Attempt to define basic application skeleton.
+            </summary>
+        </member>
+        <member name="T:SDD.Application.Composition.NamespaceDoc">
+            <summary>
+            Application skeleton.
+            </summary>
+            
+            <remarks>
+            To deal with a complex application we have to decompose it in smaller
+            parts, then probably decompose some of them and so on. Composition helps
+            to manage it.
+            
+            TODO:Having this tool we can achieve reusability at application level,
+            not only for small components.
+            TODO:Before we only heard about composition root pattern. But what if
+            it is very big? Definitely we should have some "composition branch"
+            and "composition leaf". So this will be a composing tree with its root.
+            </remarks>
+        </member>
+        <member name="T:SDD.Application.Flow.IFactory">
+            <summary>
+            Instance creation.
+            </summary>
+        </member>
+        <member name="M:SDD.Application.Flow.IFactory.Create``1">
+            <summary>
+            Create instance of <typeparamref name="TContract"/>.
+            </summary>
+        </member>
+        <member name="M:SDD.Application.Flow.IFactory.Create(System.Type)">
+            <summary>
+            Create instance of <paramref name="type"/>.
+            </summary>
+        </member>
+        <member name="T:SDD.Application.Flow.IFeature`2">
+            <summary>
+            A capability of getting a <typeparamref name="TProduct"/>
+            from specific <typeparamref name="TInput"/>.
+            </summary>
+        </member>
+        <member name="M:SDD.Application.Flow.IFeature`2.Get(`0)">
+            <summary>
+            Get a <typeparamref name="TProduct"/> from provided
+            <paramref name="input"/>.
+            </summary>
+        </member>
+        <member name="T:SDD.Application.Flow.NamespaceDoc">
+            <summary>
+            Basic flow operations.
+            </summary>
+            
+            <remarks>
+            Technically any application is a complex sequence of input/output
+            transformations. I can easily imagine this using functional paradigm -
+            output = f(input). So this namespace is build on <see cref="T:SDD.Application.Flow.IFactory"/>
+            responsible for creating the initial input and
+            <see cref="T:SDD.Application.Flow.IFeature`2"/> that transforms from input
+            to product.
+            </remarks>
+        </member>
+        <member name="T:SDD.Application.Model.IEntity`1">
+            <summary>
+            Marker interface that class relates to <typeparamref name="T"/> entity.
+            </summary>
+            
+            <remarks>
+            We may have a lot of classes supporting same entity. Partitions,
+            view-models, CRUD-related classes, etc. Using this interface we can
+            align all of them.
+            </remarks>
+        </member>
+        <member name="T:SDD.Application.Model.IHasId`1">
+            <summary>
+            Defines that entity has an unique <see cref="P:SDD.Application.Model.IHasId`1.Id"/>.
+            </summary>
+            
+            <typeparam name="TKey">
+            Type of the <see cref="P:SDD.Application.Model.IHasId`1.Id"/>.
+            </typeparam>
+        </member>
+        <member name="P:SDD.Application.Model.IHasId`1.Id">
+            <summary>
+            Unique entity identifier.
+            </summary>
+        </member>
+        <member name="T:SDD.Application.Model.IHasLifetime">
+            <summary>
+            Defines that entity has a lifetime between <see cref="P:SDD.Application.Model.IHasLifetime.Created"/>
+            and <see cref="P:SDD.Application.Model.IHasLifetime.Deleted"/>.
+            </summary>
+        </member>
+        <member name="P:SDD.Application.Model.IHasLifetime.Created">
+            <summary>
+            Date and time when entity was created.
+            </summary>
+        </member>
+        <member name="P:SDD.Application.Model.IHasLifetime.Deleted">
+            <summary>
+            Date and time when entity was deleted.
+            </summary>
+        </member>
+        <member name="T:SDD.Application.Model.IHasName">
+            <summary>
+            Defines that entity has a <see cref="P:SDD.Application.Model.IHasName.Name"/>.
+            </summary>
+        </member>
+        <member name="P:SDD.Application.Model.IHasName.Name">
+            <summary>
+            Entity name.
+            </summary>
+        </member>
+        <member name="T:SDD.Application.Model.NamespaceDoc">
+            <summary>
+            This namespace is responsible for basic models.
+            </summary>
+        </member>
+    </members>
+</doc>
