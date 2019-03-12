@@ -1,6 +1,6 @@
 ﻿using SDD.Application.Model;
 
-namespace SDD.Security
+namespace SDD.Security.Authorization
 {
     /// <summary>
     /// Security role interface.

@@ -9,7 +9,12 @@
             Basic entity contract.
             </summary>
         </member>
-        <member name="T:SDD.Security.IRole">
+        <member name="P:SDD.Security.Authentication.IAuthenticationResponse.Token">
+            <summary>
+            TODO:Unique secure token to be used by further authorizations.
+            </summary>
+        </member>
+        <member name="T:SDD.Security.Authorization.IRole">
             <summary>
             Security role interface.
             </summary>
