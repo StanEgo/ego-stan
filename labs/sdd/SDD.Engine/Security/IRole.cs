@@ -1,4 +1,6 @@
-﻿namespace SDD.Team.Security
+﻿using SDD.Frame.Model;
+
+namespace SDD.Security
 {
     /// <summary>
     /// Security role interface.

@@ -1,6 +1,4 @@
-﻿using SDD.Frame.Model;
-
-namespace SDD.Team
+﻿namespace SDD.Frame.Model
 {
     /// <summary>
     /// Basic entity contract.
