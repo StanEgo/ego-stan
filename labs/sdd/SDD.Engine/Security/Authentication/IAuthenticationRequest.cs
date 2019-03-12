@@ -2,7 +2,9 @@
 
 namespace SDD.Security.Authentication
 {
-    public interface IAuthenticationRequest : IHasId<string>
+    public interface IAuthenticationRequest
+        : IHasId<string>
+        , IEntity<IAccount>
     {
         string Signature { get; set; }
     }
