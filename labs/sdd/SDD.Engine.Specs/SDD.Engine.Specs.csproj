@@ -6,6 +6,10 @@
     <RootNamespace>SDD</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>SDD.Engine.Specs.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\SDD.Engine\SDD.Engine.csproj" />
   </ItemGroup>
