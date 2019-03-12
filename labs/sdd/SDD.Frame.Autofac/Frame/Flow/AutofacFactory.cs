@@ -1,7 +1,7 @@
 ﻿using System;
 using Autofac;
 
-namespace SDD.Frame.Flow
+namespace SDD.Application.Flow
 {
     /// <summary>
     /// <see cref="IFactory"/> implemented using Autofac IoC library.

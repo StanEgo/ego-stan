@@ -1,4 +1,4 @@
-﻿using SDD.Frame.Composition;
+﻿using SDD.Application.Composition;
 
 namespace SDD.Security
 {

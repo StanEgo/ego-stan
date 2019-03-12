@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SDD.Frame.Model
+namespace SDD.Application.Model
 {
     /// <summary>
     /// Defines that entity has a lifetime between <see cref="Created"/>

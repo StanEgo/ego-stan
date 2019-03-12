@@ -1,4 +1,4 @@
-namespace SDD.Frame.Model
+namespace SDD.Application.Model
 {
     /// <summary>
     /// Marker interface that class relates to <typeparamref name="T"/> entity.

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace SDD.Frame.Flow
+namespace SDD.Application.Flow
 {
     /// <summary>
     /// Basic flow operations.

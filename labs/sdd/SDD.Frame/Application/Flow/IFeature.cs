@@ -1,4 +1,4 @@
-﻿namespace SDD.Frame.Flow
+﻿namespace SDD.Application.Flow
 {
     /// <summary>
     /// A capability of getting a <typeparamref name="TProduct"/>

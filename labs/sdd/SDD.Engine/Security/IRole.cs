@@ -1,4 +1,4 @@
-﻿using SDD.Frame.Model;
+﻿using SDD.Application.Model;
 
 namespace SDD.Security
 {

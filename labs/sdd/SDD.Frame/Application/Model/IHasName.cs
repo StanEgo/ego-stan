@@ -1,4 +1,4 @@
-﻿namespace SDD.Frame.Model
+﻿namespace SDD.Application.Model
 {
     /// <summary>
     /// Defines that entity has a <see cref="Name"/>.

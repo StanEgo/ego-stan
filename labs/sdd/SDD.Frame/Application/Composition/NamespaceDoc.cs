@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace SDD.Frame.Composition
+namespace SDD.Application.Composition
 {
     /// <summary>
     /// Application skeleton.

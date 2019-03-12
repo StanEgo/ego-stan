@@ -1,4 +1,4 @@
-﻿namespace SDD.Frame.Composition
+﻿namespace SDD.Application.Composition
 {
     public interface IComposition
     {

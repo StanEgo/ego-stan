@@ -1,6 +1,6 @@
 using System.Runtime.CompilerServices;
 
-namespace SDD.Frame.Model
+namespace SDD.Application.Model
 {
     /// <summary>
     /// This namespace is responsible for basic models.
