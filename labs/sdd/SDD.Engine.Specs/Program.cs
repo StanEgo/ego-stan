@@ -1,4 +1,6 @@
-﻿namespace SDD
+﻿using System;
+
+namespace SDD.Engine.Specs
 {
     class Program
     {
