@@ -6,7 +6,7 @@
     <members>
         <member name="T:SDD.Application.Flow.AutofacFactory">
             <summary>
-            <see cref="T:SDD.Application.Flow.IFactory"/> implemented using Autofac IoC library.
+            <see cref="T:SDD.Application.Factory.IFactory"/> implemented using Autofac IoC library.
             </summary>
         </member>
         <member name="M:SDD.Application.Flow.AutofacFactory.#ctor(Autofac.IContainer)">
@@ -14,10 +14,10 @@
             Construct.
             </summary>
         </member>
-        <member name="M:SDD.Application.Flow.AutofacFactory.SDD#Application#Flow#IFactory#Create``1">
+        <member name="M:SDD.Application.Flow.AutofacFactory.SDD#Application#Factory#IFactory#Create``1">
             <inheritdoc />
         </member>
-        <member name="M:SDD.Application.Flow.AutofacFactory.SDD#Application#Flow#IFactory#Create(System.Type)">
+        <member name="M:SDD.Application.Flow.AutofacFactory.SDD#Application#Factory#IFactory#Create(System.Type)">
             <inheritdoc />
         </member>
     </members>

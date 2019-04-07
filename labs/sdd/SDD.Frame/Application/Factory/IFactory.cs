@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SDD.Application.Flow
+namespace SDD.Application.Factory
 {
     /// <summary>
     /// Instance creation.

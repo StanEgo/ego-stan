@@ -4,6 +4,26 @@
         <name>SDD.Frame</name>
     </assembly>
     <members>
+        <member name="T:SDD.Application.Code.ICode`2">
+            <summary>
+            TODO: Code as defined in the Codex is a rule to produce
+            <typeparamref name="TOutput"/> from <typeparamref name="TInput"/>.
+            </summary>
+        </member>
+        <member name="T:SDD.Application.Code.NamespaceDoc">
+            <summary>
+            Basic code operations.
+            </summary>
+            
+            <remarks>
+            Technically any application is a complex sequence of input/output
+            transformations. I can easily imagine this using functional paradigm -
+            output = f(input). So this namespace is build on <see cref="T:SDD.Application.Factory.IFactory"/>
+            responsible for creating the initial input and
+            <see cref="T:SDD.Application.Code.ICode`2"/> that transforms from input
+            to product.
+            </remarks>
+        </member>
         <member name="T:SDD.Application.Composition.ApplicationComposition">
             <summary>
             TODO:Attempt to define basic application skeleton.
@@ -36,46 +56,20 @@
             and "composition leaf". So this will be a composing tree with its root.
             </remarks>
         </member>
-        <member name="T:SDD.Application.Flow.IFactory">
+        <member name="T:SDD.Application.Factory.IFactory">
             <summary>
             Instance creation.
             </summary>
         </member>
-        <member name="M:SDD.Application.Flow.IFactory.Create``1">
+        <member name="M:SDD.Application.Factory.IFactory.Create``1">
             <summary>
             Create instance of <typeparamref name="TContract"/>.
             </summary>
         </member>
-        <member name="M:SDD.Application.Flow.IFactory.Create(System.Type)">
+        <member name="M:SDD.Application.Factory.IFactory.Create(System.Type)">
             <summary>
             Create instance of <paramref name="type"/>.
             </summary>
-        </member>
-        <member name="T:SDD.Application.Flow.IFeature`2">
-            <summary>
-            A capability of getting a <typeparamref name="TProduct"/>
-            from specific <typeparamref name="TInput"/>.
-            </summary>
-        </member>
-        <member name="M:SDD.Application.Flow.IFeature`2.Get(`0)">
-            <summary>
-            Get a <typeparamref name="TProduct"/> from provided
-            <paramref name="input"/>.
-            </summary>
-        </member>
-        <member name="T:SDD.Application.Flow.NamespaceDoc">
-            <summary>
-            Basic flow operations.
-            </summary>
-            
-            <remarks>
-            Technically any application is a complex sequence of input/output
-            transformations. I can easily imagine this using functional paradigm -
-            output = f(input). So this namespace is build on <see cref="T:SDD.Application.Flow.IFactory"/>
-            responsible for creating the initial input and
-            <see cref="T:SDD.Application.Flow.IFeature`2"/> that transforms from input
-            to product.
-            </remarks>
         </member>
         <member name="T:SDD.Application.Model.IEntity`1">
             <summary>

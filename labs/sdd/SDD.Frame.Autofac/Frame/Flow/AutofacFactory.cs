@@ -1,5 +1,6 @@
 ﻿using System;
 using Autofac;
+using SDD.Application.Factory;
 
 namespace SDD.Application.Flow
 {
