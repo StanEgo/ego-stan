@@ -25,7 +25,7 @@ namespace Grammatron.Interpolated
     /// Would expression-bodied members help somehow?
     /// </para>
     /// </remarks>
-    public class HttpGrammar
+    public class HttpGrammar : Grammar
     {
         public Expression<Symbol<HttpVersion>> Version => model
             => $"HTTP/{model.Major}.{model.Minor}"
