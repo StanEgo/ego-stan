@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
-using Grammatron.Model.Http;
+using SDD.Web.Http;
 
-namespace Grammatron.Interpolated
+namespace SDD.Specification.Grammar.Interpolated
 {
     public delegate string Symbol<T>(T model);
 

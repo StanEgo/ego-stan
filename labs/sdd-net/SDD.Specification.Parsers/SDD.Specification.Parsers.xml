@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SDD.Specification.Parsers</name>
+    </assembly>
+    <members>
+        <member name="T:SDD.Specification.Grammar.Interpolated.Grammar">
+            <remarks>
+            <para>
+                Quantifiers like <see cref="F:SDD.Specification.Grammar.Interpolated.Grammar.Optional"/>, <see cref="F:SDD.Specification.Grammar.Interpolated.Grammar.One"/>, etc.
+                may be used in "alignment" option of interpolated strings. It may
+                look like "...{model.Value, Many}...".
+            </para>
+            </remarks>
+        </member>
+        <member name="T:SDD.Specification.Grammar.Interpolated.HttpGrammar">
+            <remarks>
+            <para>
+            How to define quantifiers and logic operations? Embedding symbols like
+            "*" "+" into text parts or add statements like "...{ Version.Many}..."
+            or {... Version | SmthElse ... } or use interpolation formats:
+            "... {model.Prop1:*}...{model.Prop2,1}...{model.Prop3,Many}". Or use
+            brackets somehow.
+            </para>
+            
+            <para>
+            Ideally would be to have custom class instead of Expression{Symbol{T}}
+            that can converts from lambda expressions. This shortens grammars,
+            allows to overload operations to write things like
+            "...{model.HttpVersion as Version}...".
+            </para>
+            
+            <para>
+            Would expression-bodied members help somehow?
+            </para>
+            </remarks>
+        </member>
+        <member name="P:SDD.Specification.Grammar.Interpolated.HttpGrammar.Request">
+            <remarks>
+            TODO: How to reference HTTP Version? I need both this.Version
+            and model.HttpVersion to be mentioned somehow. Combine somehow
+            e.g. "... {model.HttpVersion = Version}"?
+            </remarks>
+        </member>
+        <member name="T:SDD.Specification.Grammar.Interpolated.NamespaceDoc">
+            <summary>
+            Attempt to employ interpolated strings as the main tool for
+            grammar defintion.
+            </summary>
+        </member>
+        <member name="T:SDD.Web.Http.HttpRequestLine">
+            <summary>
+            Model for the HTTP request line.
+            </summary>
+            
+            <remarks>
+            <a href="https://tools.ietf.org/html/rfc2616#section-5.1">RFC</a>.
+            </remarks>
+        </member>
+        <member name="T:SDD.Web.Http.HttpVersion">
+            <summary>
+            HTTP Version.
+            </summary>
+            
+            <remarks>
+            <a href="https://tools.ietf.org/html/rfc2616#section-3.1">RFC</a>.
+            </remarks>
+        </member>
+    </members>
+</doc>

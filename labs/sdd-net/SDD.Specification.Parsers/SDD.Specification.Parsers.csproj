@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SDD</RootNamespace>
+    <Version>0.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\OneDrive\Ego\~Sort\stan\labs\sdd-net\SDD.Specification.Parsers\SDD.Specification.Parsers.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Specification\Grammar\" />
+    <Folder Include="Web\Http\" />
+    <Folder Include="Web\Json\" />
+  </ItemGroup>
+
+</Project>

@@ -1,8 +1,8 @@
 using System.Linq.Expressions;
-using Grammatron.Model.Http;
+using SDD.Web.Http;
 using Xunit;
 
-namespace Grammatron.Interpolated
+namespace SDD.Specification.Grammar.Interpolated
 {
     public class HttpGrammarTests
     {

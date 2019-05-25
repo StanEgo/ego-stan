@@ -1,4 +1,4 @@
-﻿namespace Grammatron.Model.Http
+﻿namespace SDD.Web.Http
 {
     /// <summary>
     /// HTTP Version.

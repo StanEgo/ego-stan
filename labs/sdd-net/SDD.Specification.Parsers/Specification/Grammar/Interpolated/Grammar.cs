@@ -1,4 +1,4 @@
-﻿namespace Grammatron.Interpolated
+﻿namespace SDD.Specification.Grammar.Interpolated
 {
     /// <remarks>
     /// <para>

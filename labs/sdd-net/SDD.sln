@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDD.Frame", "SDD.Frame\SDD.Frame.csproj", "{8B9AB171-5608-4D8D-89C7-F923F998AC6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDD.Frame", "SDD.Frame\SDD.Frame.csproj", "{8B9AB171-5608-4D8D-89C7-F923F998AC6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDD.Frame.Autofac", "SDD.Frame.Autofac\SDD.Frame.Autofac.csproj", "{17875F2F-7185-48D2-AB69-C8CDD1AF873C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDD.Frame.Autofac", "SDD.Frame.Autofac\SDD.Frame.Autofac.csproj", "{17875F2F-7185-48D2-AB69-C8CDD1AF873C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDD.Engine", "SDD.Engine\SDD.Engine.csproj", "{64641BA8-D60A-406C-86EF-16E579D0824C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDD.Engine", "SDD.Engine\SDD.Engine.csproj", "{64641BA8-D60A-406C-86EF-16E579D0824C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDD.Database.Sql", "SDD.Database.Sql\SDD.Database.Sql.csproj", "{48E9FBB5-32C9-4B94-8CC0-720B9C17209B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDD.Database.Sql", "SDD.Database.Sql\SDD.Database.Sql.csproj", "{48E9FBB5-32C9-4B94-8CC0-720B9C17209B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDD.Engine.Specs", "SDD.Engine.Specs\SDD.Engine.Specs.csproj", "{69933AB8-2542-4121-8943-ACDA621947E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDD.Engine.Specs", "SDD.Engine.Specs\SDD.Engine.Specs.csproj", "{69933AB8-2542-4121-8943-ACDA621947E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDD.Cli", "SDD.Cli\SDD.Cli.csproj", "{85262239-4F25-408A-90E8-0F392A6A6998}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDD.Cli", "SDD.Cli\SDD.Cli.csproj", "{85262239-4F25-408A-90E8-0F392A6A6998}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDD.Specification.Parsers", "SDD.Specification.Parsers\SDD.Specification.Parsers.csproj", "{5AF1CFCF-F843-45B0-9734-95E3176B154E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDD.Tests", "SDD.Tests\SDD.Tests.csproj", "{049401F6-7C93-4ADD-812B-85B5298912C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{85262239-4F25-408A-90E8-0F392A6A6998}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85262239-4F25-408A-90E8-0F392A6A6998}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85262239-4F25-408A-90E8-0F392A6A6998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF1CFCF-F843-45B0-9734-95E3176B154E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF1CFCF-F843-45B0-9734-95E3176B154E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF1CFCF-F843-45B0-9734-95E3176B154E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF1CFCF-F843-45B0-9734-95E3176B154E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{049401F6-7C93-4ADD-812B-85B5298912C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049401F6-7C93-4ADD-812B-85B5298912C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049401F6-7C93-4ADD-812B-85B5298912C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049401F6-7C93-4ADD-812B-85B5298912C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

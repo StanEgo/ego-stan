@@ -1,4 +1,4 @@
-﻿namespace Grammatron.Model.Http
+﻿namespace SDD.Web.Http
 {
     /// <summary>
     /// Model for the HTTP request line.
