@@ -1,5 +1,6 @@
-const withCss = require("@zeit/next-css")
-const withSass = require("@zeit/next-sass")
+const withCss = require("@zeit/next-css");
+const withSass = require("@zeit/next-sass");
+const withTypescript = require('@zeit/next-typescript');
 
 let config = {
   webpack: config => {
@@ -12,6 +13,7 @@ let config = {
   }
 }
 
+config = withTypescript(config);
 config = withSass(config);
 config = withCss(config);
 
