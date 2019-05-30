@@ -9,6 +9,7 @@
   "scripts": {},
   "devDependencies": {
     "eslint": "^5.16.0",
-    "lerna": "^3.4.3"
+    "lerna": "^3.4.3",
+    "webpack": "^4.32.2"
   }
 }
