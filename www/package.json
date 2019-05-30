@@ -1,0 +1,22 @@
+{
+  "name": "create-next-example-app",
+  "scripts": {
+	"clean:next": "rimraf .next",
+	"clean:export": "rimraf .export",
+	"clean": "yarn clean:next && yarn clean:export",
+	
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "yarn clean && yarn build && next export -o .export"
+  },
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "eslint": "^5.16.0",
+    "rimraf": "^2.6.3"
+  }
+}
