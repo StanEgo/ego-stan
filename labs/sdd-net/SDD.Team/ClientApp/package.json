@@ -2,6 +2,8 @@
   "name": "SDD.Team",
   "version": "0.1.0",
   "private": true,
+  "author": "Stanislav S. Yarmonov",
+  "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
