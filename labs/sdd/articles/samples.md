@@ -1,0 +1,3 @@
+# Samples
+
+* Team application (ApplicationSample)
