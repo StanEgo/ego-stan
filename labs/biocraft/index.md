@@ -65,6 +65,12 @@
 * "Мы отправляемся в наши исследовательские лаборатории, чтобы изучить врага",
   разведка (анализ), полигон (тесты), разработка (синтез) и другие компоненты
   SDLC можно привести к игровому виду.
+* Скорее всего стоит идти индуктивным путём (заодно и привить базовые навыки из
+  теории познания). Можно взять в качестве примера какую-то пандемию (скажем,
+  Юстинианову чуму) и её возбудителя (Yersinia pestis), её визуализировать в
+  игровом стиле (http://www.thinkstockphotos.in/image/stock-photo-enterobacterias-gram-negative-bacterias/920681464)
+  и начать исследование, включая оружие. Возможно, визуализация удастся в
+  процедурном стиле.
 * Начать изучение языка программирования (ES/TS) стоит с комментариев. Обычно
   делают много глупостей. Пишут заметки в текстовых файлах, потом пишут код,
   затем комментируют его и документируют или забывают. А правильно - пишем
@@ -81,6 +87,14 @@
   альтер-эго может выглядеть как система безопасности (ключи, аутентификации,
   распознавание свой-чужой). Немалый интерес, естественно, будет вызывать
   оружие. 
+* Основные ресурсы - протеины, липиды и углеводы (глюко...).
+  * Протеины состоят из аминокислот (как руны), которые могут соединяться между
+    собой в различных комбинациях. Выполняют строительно-структурную функцию
+	(коллаген, эластин, кератин), ферментативную (ускорение распада и синтеза),
+	транспортная функция (гемоглобин, миоглобин, альбумин), защитная функция
+	(иммуноглобулин, B-лимфоцит, интерферон, тромбин, фибриноген), регуляторная
+	(гормоны - инсулин, ...), энергетическая.
+	
 
 ## Брендинг
 
@@ -145,3 +159,67 @@
   огнемёт (было в каком-то интервью).
 * https://www.indiegogo.com/explore/writing-publishing?project_type=campaign&project_timing=all&sort=most_funded
 * https://habr.com/ru/company/atlasbiomed/blog/454960/
+* edX introductory
+	* https://www.edx.org/course/introduction-to-biology-the-secret-of-life-3
+	* https://www.edx.org/course/viruses-how-to-beat-them-cells-immunity-vaccines-0
+	* https://www.edx.org/course/fundamentals-of-neuroscience-part-1-the-electrical-properties-of-the-neuron
+	* https://www.edx.org/course/the-chemistry-of-life-2
+	* https://www.edx.org/course/autophagy-research-behind-the-2016-nobel-prize-in-physiology-or-medicine
+	* https://www.edx.org/course/nutrition-and-health-macronutrients-and-overnutrition-2
+	* https://www.edx.org/course/essential-human-biology-cells-and-tissues
+	* https://www.edx.org/course/biograph-teaching-biology-through-systems-models-argumentation-2
+	* https://www.edx.org/course/principles-of-biomanufacturing-using-biotechnology-to-manufacture-medicines
+	* https://www.edx.org/course/nutrition-and-health-human-microbiome-2
+	* https://www.edx.org/course/ap-biology-part-1-the-cell-2
+	* https://www.edx.org/course/apr-biology-part-2-genetics-ricex-advbio-2x-0
+	* https://www.edx.org/course/apr-biology-part-3-evolution-diversity-ricex-advbio-3x-0
+	* https://www.edx.org/course/apr-biology-part-4-ecology-ricex-advbio-4x-0
+	* https://www.edx.org/course/apr-biology-part-5-review-exam-ricex-advbio-5x-0
+	* https://www.edx.org/course/dna-and-atoms-the-secret-of-life-0
+	* https://www.edx.org/course/introduction-human-evolution-wellesleyx-anth207x-1
+	* https://www.edx.org/course/the-immune-system-new-developments-in-research-part-1-2
+	* https://www.edx.org/course/analyze-your-genome
+	* https://www.edx.org/course/human-anatomy
+	* https://www.edx.org/course/cell-biology-mitochondria
+	* https://www.edx.org/course/life-in-the-universe-syntheses-for-life
+	* https://www.edx.org/xseries/anatomy
+		* https://www.edx.org/course/anatomy-musculoskeletal-and-integumentary-systems-2
+		* https://www.edx.org/course/anatomy-cardiovascular-urinary-and-respiratory-systems
+		* https://www.edx.org/course/anatomy-human-neuroanatomy
+		* https://www.edx.org/course/anatomy-gastrointestinal-reproductive-and-endocrine-systems
+* edX Intermediate
+	* https://www.edx.org/course/nature-code-biology-javascript-epflx-nic1-0x
+	* https://www.edx.org/course/biochemistry-biomolecules-methods-and-mechanisms-2
+	* https://www.edx.org/course/proteins-biologys-workforce-2
+	* https://www.edx.org/course/dna-biologys-genetic-code-2
+	* https://www.edx.org/course/graph-algorithms-genome-sequencing-uc-san-diegox-algs206x
+	* https://www.edx.org/course/the-extremes-of-life-microbes-and-their-diversity
+	* https://www.edx.org/course/system-dynamics-for-health-sciences-0
+	* https://www.edx.org/course/cellular-mechanisms-brain-function-epflx-brainx-1
+	* https://www.edx.org/course/defeating-malaria-genes-to-globe
+	* https://www.edx.org/course/useful-genetics-part-1-how-genes-shape-ubcx-usegen-1x-0
+	* https://www.edx.org/course/useful-genetics-part-2-genes-genetic-ubcx-usegen-2x-0
+	* https://www.edx.org/course/anatomyx-musculoskeletal-cases
+	* https://www.edx.org/course/biological-engineering-cellular-design-principles
+	* https://www.edx.org/course/making-biologic-medicines-for-patients-the-principles-of-biopharmaceutical-manufacturing-3
+	* https://www.edx.org/course/medical-genomics-101
+	* https://www.edx.org/course/introduction-to-bioconductor-annotation-and-analysis-of-genomes-and-genomic-assays-3
+	* https://www.edx.org/course/principles-of-biochemistry
+* edX Advanced
+	* https://www.edx.org/course/molecular-biology-part-1-dna-replication-and-repair
+	* https://www.edx.org/course/molecular-biology-part-2-transcription-and-transposition-0
+	* https://www.edx.org/course/molecular-biology-part-3-rna-processing-and-translation-0
+	* https://www.edx.org/course/dna-sequences-alignments-and-analysis
+	* https://www.edx.org/course/simulation-neuroscience-epflx-simneurox
+	* https://www.edx.org/course/proteins-alignment-analysis-and-structure-1
+	* https://www.edx.org/course/essentials-of-genomics-and-biomedical-informatics
+	* https://www.edx.org/course/principles-of-synthetic-biology-1
+	* https://www.edx.org/course/synchrotrons-and-x-ray-free-electron-lasers
+* edX MicroMasters
+	* https://www.edx.org/micromasters/usmx-umuc-bioinformatics
+* https://www.youtube.com/watch?v=DrPvw7Ivjgo
+* https://www.youtube.com/watch?v=qHeGo3pJSfk
+* https://www.youtube.com/watch?v=6YrZbKe8mWQ
+* Будет несложно продемонстрировать, как дефицит тех или иных веществ (скажем,
+  железа) может повлиять на определённые функции. Скажем, на примере
+  коферментов.
