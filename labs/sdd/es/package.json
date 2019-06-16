@@ -1,0 +1,8 @@
+{
+	"private": true,
+	"workspaces": [
+		"team/specs",
+		"team/cli",
+		"team/server"
+	]
+}
