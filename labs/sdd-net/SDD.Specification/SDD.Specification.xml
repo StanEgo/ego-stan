@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SDD.Specification</name>
+    </assembly>
+    <members>
+        <member name="T:AssemblyDoc">
+            <summary>
+            TODO:
+            </summary>
+            
+            <remarks>
+            <para>
+            TODO: This Specification assembly is an application's layer (additionally
+            to Design, Infrastructure, CLI and others). Most of them can be represented
+            in SDD itself as a sample of solution framework.
+            </para>
+            
+            <para>
+            TODO: Assembly (the layer) should be considered as a combination of
+            different domains. So SomeApp.Specification assembly can contain all docs,
+            samples, tests, etc. That would be good for documentation as well, because
+            this assembly may contains references to any others. That is much better
+            than reference samples from core objects. So documentation is build based
+            on specification. But specification can reference other assemblies and
+            reuse documentation from them. For example, some interfaces.
+            </para>
+            
+            <para>
+            TODO:So the first step of any application is to create MyApp.Specification
+            assembly. It will contain all we know about application.
+            
+            TODO: I'll use SDD as a recursive sample. So it's idea will be implemented
+            for it's design.
+            
+            TODO:When analysing stakeholders' requirements we'll start from samples.
+            In this sample class we will describe all/ we know about particular entity.
+            
+            TODO: Then we can extract some specific contracts from such samples and
+            start to put it into SDD.Frame/SDD.Design.
+            </para>
+            </remarks>
+        </member>
+    </members>
+</doc>

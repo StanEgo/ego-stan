@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDD.Specification.Parsers",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDD.Tests", "SDD.Tests\SDD.Tests.csproj", "{049401F6-7C93-4ADD-812B-85B5298912C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDD.Team", "SDD.Team\SDD.Team.csproj", "{30C69528-8794-4779-AF8A-F0220FC9315A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDD.Team", "SDD.Team\SDD.Team.csproj", "{30C69528-8794-4779-AF8A-F0220FC9315A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDD.Specification", "SDD.Specification\SDD.Specification.csproj", "{048503B5-9DBF-40A6-BD0C-8E613E8A32D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{30C69528-8794-4779-AF8A-F0220FC9315A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30C69528-8794-4779-AF8A-F0220FC9315A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30C69528-8794-4779-AF8A-F0220FC9315A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{048503B5-9DBF-40A6-BD0C-8E613E8A32D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{048503B5-9DBF-40A6-BD0C-8E613E8A32D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{048503B5-9DBF-40A6-BD0C-8E613E8A32D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{048503B5-9DBF-40A6-BD0C-8E613E8A32D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
