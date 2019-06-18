@@ -5,7 +5,7 @@
   systems made up of capability-aligned microservices."
   Microservice Architecture, O'Reilly
 
-## Сомнения
+## Inbox
 * Если следовать из идей дизайна, скажем SOLID, сервис не должен иметь ни
   малейшего понятия о том, как он коммуницирует с другими сервисами и как он
   развернут. Здесь это может быть одно монолитное приложение с inprocess
