@@ -8,12 +8,34 @@
   поэтому легко может сочетаться с C#.
 * Type inference обеспечивает максимальную обобщенность.
 
-## Соглашения
-TODO: Не рассматриваем функцию как вычисление, это - сервис, услуга, оказываемая
-некоторым агентом.
-TODO: Хотелось бы передавать в функцию один сложный тип, чтобы было больше
-контроля и лучше диспетчеризация агентам. Но могут возникнуть проблемы с
-каррированием? Технически, классические аргументы функции похожи на простой
-кортеж, но при каррировании они, видимо, деструктурируются. Можно ли аналогичное
-реализовать с другими типами, может используя "with".
+## Типы
+* TODO: Обнаружил в документации к FSharpType.GetRecordFields такой код
+```fsharp
+// Signature:
+static member GetRecordFields : Type * ?BindingFlags -> PropertyInfo []
+static member GetRecordFields : Type * ?bool -> PropertyInfo []
 
+TODO: Ещё один пример
+type Shape = 
+    | Circle of radius:int
+    | Rectangle of width:int * height:int
+
+let rect1 = Rectangle(width = 100, height = 100)
+
+TODO:BoundedTypes
+http://blog.christopher-atkins.com/DependentTypesProvider/tutorial.html
+Интересно, как они реализованы
+```
+
+## Рефлексия
+* [Microsoft.FSharp.Reflection](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/microsoft.fsharp.reflection-namespace-%5bfsharp%5d), как пример -
+  FSharpType.GetRecordFields
+
+## Соглашения
+* TODO: Не рассматриваем функцию как вычисление, это - сервис, услуга, оказываемая
+  некоторым агентом.
+* TODO: Хотелось бы передавать в функцию один сложный тип, чтобы было больше
+  контроля и лучше диспетчеризация агентам. Но могут возникнуть проблемы с
+  каррированием? Технически, классические аргументы функции похожи на простой
+  кортеж, но при каррировании они, видимо, деструктурируются. Можно ли
+  аналогичное реализовать с другими типами, может используя "with".
