@@ -8,6 +8,12 @@
   поэтому легко может сочетаться с C#.
 * Type inference обеспечивает максимальную обобщенность.
 
+## Сомнения
+* Не получится ли так, что мощная система типов окажется беспомощной, когда
+  речь пойдет о динамической природе. Скажем, мы добавляем CommandType и
+  ResultType из внешнего плагина. Или интерфейсы внешнего плагина могут стать
+  частью типов?
+
 ## Типы
 * TODO: Обнаружил в документации к FSharpType.GetRecordFields такой код
 ```fsharp
@@ -25,6 +31,29 @@ let rect1 = Rectangle(width = 100, height = 100)
 TODO:BoundedTypes
 http://blog.christopher-atkins.com/DependentTypesProvider/tutorial.html
 Интересно, как они реализованы
+
+TODO:Интересные аргументы функции
+type Person = {
+    Id: int
+    First: string
+    Last: string
+}
+
+let isValid { Person.Id = id } = 
+    id > 0
+
+TODO: Организация типов
+module Person = 
+    type T = {First:string; Last:string}...
+	let create first last = { First = first; Last = last }
+	
+TODO:Расширение типов
+type System.Int32 with
+    member this.IsEven = this % 2 = 0
+type System.Int32 with
+    static member IsOdd x = x % 2 = 1
+type T with 
+	member this.SomeMethod = someFunc this
 ```
 
 ## Рефлексия
@@ -39,3 +68,6 @@ http://blog.christopher-atkins.com/DependentTypesProvider/tutorial.html
   каррированием? Технически, классические аргументы функции похожи на простой
   кортеж, но при каррировании они, видимо, деструктурируются. Можно ли
   аналогичное реализовать с другими типами, может используя "with".
+
+## Для прочтения
+* https://fsharpforfunandprofit.com/site-contents/
