@@ -1,0 +1,6 @@
+[workspace]
+members = [
+	"crates/cloud-cli", 
+	"crates/cloud-agent",
+	"specs/benchmark"
+]
