@@ -4,7 +4,7 @@
 * Эко-язык (экологичный и экономичный). Больше творчества, меньше кода, особенно
   дублирующего.
 * Функциональные языки развивают мозг, императивные - пальцы и навык copy-paste.
-* Выполняет в больше степени роль DevOps-языка (executable specifications),
+* Выполняет в большей степени роль DevOps-языка (executable specifications),
   поэтому легко может сочетаться с C#.
 * Type inference обеспечивает максимальную обобщенность.
 
@@ -71,3 +71,7 @@ type T with
 
 ## Для прочтения
 * https://fsharpforfunandprofit.com/site-contents/
+
+## InBox
+* https://github.com/xamarin/xamarin-forms-samples. Там же отсылка на примеры
+  для Tizen.
