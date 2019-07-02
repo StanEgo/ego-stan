@@ -1,12 +1,10 @@
 use futures::{ Future, Stream };
 use tokio_postgres::{connect, NoTls};
 
-const PG_CONNECTION: &str = "postgresql://postgres:!qa2Ws3eD@localhost:5432";
-
 pub fn test_postgres() {
     let fut =
         // Connect to the database
-        connect(PG_CONNECTION, NoTls)
+        connect(super::PG_CONNECTION, NoTls)
 
         // The connection object performs the actual communication with the
         // database, so spawn it off to run on its own.

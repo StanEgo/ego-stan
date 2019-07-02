@@ -1,1 +1,1 @@
-DROP DATABASE IF EXISTS "mesh";
+DROP DATABASE IF EXISTS "mesh-sample";

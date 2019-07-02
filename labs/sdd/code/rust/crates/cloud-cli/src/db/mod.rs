@@ -6,6 +6,7 @@ mod test_mesh;
 pub use self::test_postgres::test_postgres;
 pub use self::test_mesh::test_mesh;
 
+pub const PG_CONNECTION: &str = "postgresql://postgres:!qa2Ws3eD@localhost:5432";
 pub const COMMAND_NAME: &str = "db";
 
 pub fn command_factory<'a, 'b>() -> App<'a, 'b> {
