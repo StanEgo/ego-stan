@@ -18,7 +18,7 @@
         {
             "label": "cargo run hack",
             "type": "shell",
-            "command": "cargo run --bin sde-cloud-cli -- db test-postgres",
+            "command": "cargo run --bin sde-cloud-cli -- db test-mesh",
             "problemMatcher": [
                 "$rustc"
             ],

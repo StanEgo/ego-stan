@@ -20,9 +20,8 @@ fn test_clap() {
     match cli.subcommand() {
         (db::COMMAND_NAME, Some(db_args)) => {
             match db_args.subcommand() {
-                ("test-postgres", Some(_)) => {
-                    db::test_postgres();
-                },
+                ("test-postgres", Some(_)) => db::test_postgres(),
+                ("test-mesh", Some(_)) => db::test_mesh(),
                 _ => unimplemented!()
             }
         },
