@@ -5,3 +5,7 @@ authors = ["stan <stanislav@yarmonov.pro>"]
 edition = "2018"
 
 [dependencies]
+futures = "0.1" # TODO: Look into 0.3.0 alpha version.
+tokio = "0.1"
+tokio-core = "0.1"
+tokio-postgres = "0.4.0-rc.3"

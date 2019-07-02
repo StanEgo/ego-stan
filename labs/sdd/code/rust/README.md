@@ -10,3 +10,19 @@
   * https://riscv.org/2017/11/rust-comes-risc-v/
 * Системность может приблизить к bare-metal решениям в облаках.
 * Termux support.
+
+## Константы
+const THRESHOLD: i32 = 10;
+
+## Статические переменные
+static LANGUAGE: &str = "Rust";
+
+## Crate
+TODO: https://crates.io/
+
+## Cargo
+TODO:cargo init
+TODO:Workspaces
+
+## Postgres
+TODO:docker run -d --name pg1 -p 5432:5432 -e POSTGRES_PASSWORD=!qa2Ws3eD postgres:12
