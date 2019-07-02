@@ -13,6 +13,7 @@
 
 ## Константы
 const THRESHOLD: i32 = 10;
+const VERSION: &'static str = env!("CARGO_PKG_VERSION");
 
 ## Статические переменные
 static LANGUAGE: &str = "Rust";
