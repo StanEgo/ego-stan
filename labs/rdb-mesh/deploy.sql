@@ -1,0 +1,3 @@
+SET CLIENT_MIN_MESSAGES TO WARNING;
+
+\i 0001/deploy.sql
