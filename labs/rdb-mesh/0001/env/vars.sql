@@ -7,7 +7,8 @@
 CREATE VIEW env.vars
 AS SELECT
 	:ENV_DEBUG::boolean AS debug,
-	:ENV_CLEAN::boolean AS clean
+	:ENV_CLEAN::boolean AS clean,
+	:ENV_SHARD::smallint AS shard
 ;
 
 CREATE FUNCTION env.is_debug()
