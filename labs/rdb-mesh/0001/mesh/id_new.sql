@@ -1,7 +1,19 @@
-CREATE FUNCTION mesh.id_new ()
+/******************************************************************************
+
+	Generate @see mesh.id.
+	
+ ******************************************************************************/
+CREATE FUNCTION mesh.id_new()
 RETURNS mesh.id
 AS $BODY$
-    --TASK:
-    SELECT 0::mesh.id
+    SELECT
+        (
+            (EXTRACT(EPOCH FROM (NOW() - epoch)::INTERVAL)::bigint << 32)
+            + (shard::bigint << 20)
+            + NEXTVAL('mesh.id_sequence')
+        )::mesh.id
+    FROM
+        env.vars
+    ;
 $BODY$
 LANGUAGE SQL;

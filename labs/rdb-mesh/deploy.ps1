@@ -9,6 +9,7 @@ psql `
 	--set=ENV_DEBUG=1 `
 	--set=ENV_CLEAN=1 `
 	--set=ENV_SHARD=1 `
+	--set=ENV_EPOCH='''2010-01-01''' `
 	--username=postgres `
 	--dbname=meshdb `
 	--file=deploy.sql `

@@ -1,17 +1,18 @@
-/***************************************************************************************************
+/******************************************************************************
 
 	View all environment variables, those are passed to psql.exe call
 	(e.g. --set=ENV_DEBUG=1) and other external sources.
 	
- ***************************************************************************************************/
-CREATE VIEW env.vars
+ ******************************************************************************/
+CREATE OR REPLACE VIEW env.vars
 AS SELECT
 	:ENV_DEBUG::boolean AS debug,
 	:ENV_CLEAN::boolean AS clean,
-	:ENV_SHARD::smallint AS shard
+	:ENV_SHARD::smallint AS shard,
+	:ENV_EPOCH::timestamp AS epoch
 ;
 
-CREATE FUNCTION env.is_debug()
+CREATE OR REPLACE FUNCTION env.is_debug()
 RETURNS boolean
 AS $BODY$
 	SELECT
@@ -22,11 +23,11 @@ $BODY$
 LANGUAGE SQL
 IMMUTABLE;
 
-CREATE FUNCTION env.is_clean()
+CREATE OR REPLACE FUNCTION env.is_clean()
 RETURNS boolean
 AS $BODY$
 	SELECT
-		debug
+		clean
 	FROM
 		env.vars
 $BODY$
