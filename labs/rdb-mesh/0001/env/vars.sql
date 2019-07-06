@@ -1,6 +1,6 @@
 /***************************************************************************************************
 
-	View all environment variables, those are passed fro psql.exe call
+	View all environment variables, those are passed to psql.exe call
 	(e.g. --set=ENV_DEBUG=1) and other external sources.
 	
  ***************************************************************************************************/
