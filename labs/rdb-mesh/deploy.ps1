@@ -5,6 +5,8 @@ $env:PGPASSWORD='!qa2Ws3eD'
 
 Push-Location -Path $PSScriptRoot
 
+# docker run --name pg1 -d -e POSTRES_PASSWORD=!qa2Ws3eD -p 5432:5432 postgres:12
+
 psql `
 	--set=ENV_DEBUG=1 `
 	--set=ENV_CLEAN=1 `
