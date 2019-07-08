@@ -4,3 +4,4 @@
 
 \i 0001/test/schema.sql
 \i 0001/mesh/schema.sql
+\i 0001/social/schema.sql
