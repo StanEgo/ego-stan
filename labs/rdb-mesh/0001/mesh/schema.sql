@@ -6,7 +6,7 @@ CREATE SCHEMA "mesh";
 
 \i 0001/mesh/prototype/table.sql
 
-\i 0001/mesh/node/table.sql
+\i 0001/mesh/entity/table.sql
 
 \i 0001/mesh/link/linktype.sql
 \i 0001/mesh/link/table.sql

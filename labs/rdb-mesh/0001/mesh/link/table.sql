@@ -11,11 +11,12 @@
 CREATE TABLE mesh.link (
     id mesh.id NOT NULL,
 
-    node mesh.id NOT NULL,
+    entity mesh.id NOT NULL,
 
     type mesh.linktype
 );
 
+/*
 ALTER TABLE
     mesh.link
 ADD CONSTRAINT
@@ -31,23 +32,24 @@ ADD CONSTRAINT
     FK_mesh_link_id
 FOREIGN KEY (
     id
-) REFERENCES mesh.node (
+) REFERENCES mesh.entity (
     id
 );
 
 ALTER TABLE
     mesh.link
 ADD CONSTRAINT
-    FK_mesh_link_node
+    FK_mesh_link_entity
 FOREIGN KEY (
     id
-) REFERENCES mesh.node (
+) REFERENCES mesh.entity (
     id
 );
 
 CREATE INDEX
-    IX_mesh_link_node
+    IX_mesh_link_entity
 ON mesh.link (
-    node,
+    enity,
     type
 );
+*/
