@@ -12,6 +12,6 @@ CREATE TABLE security.session (
 
     uid bytea NOT NULL,
 
-    space mesh.id NOT NULL,
-        CONSTRAINT fk_security_session_space FOREIGN KEY (id) REFERENCES security.space(id)
+    profile mesh.id NOT NULL,
+        CONSTRAINT fk_security_session_profile FOREIGN KEY (id) REFERENCES security.profile(id)
 ) WITHOUT OIDS;
