@@ -14,7 +14,7 @@ impl<'a> fmt::Display for SqlConnection<'a> {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(
             f,
-            "server = {} port = {} database = {} user = {} password = {}",
+            "server={} port={} database={} user={} password={}",
             self.server,
             self.port,
             self.database,
@@ -37,11 +37,11 @@ pub struct SqlPipeline {
 }
 
 pub trait SqlPipe {
-    fn execute() -> Future<Item = SqlPipeline, Error = ()>;
+    fn execute(pipeline: &SqlPipeline) -> Box<Future<Item = SqlPipeline, Error = ()>>;
 }
 
-// impl SqlPipe for SqlConnection {
-//     fn execute() -> Future<Item = SqlPipeline, Error = ()> {
-//         unimplemented!();
-//     }
-// }
+impl<'a> SqlPipe for SqlConnection<'a> {
+    fn execute(pipeline: &SqlPipeline) -> Box<Future<Item = SqlPipeline, Error = ()>> {
+        unimplemented!();
+    }
+}

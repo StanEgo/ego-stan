@@ -1,10 +1,16 @@
 use clap::{ App, AppSettings, SubCommand };
 
+mod sql;
 mod test_postgres;
 mod test_mesh;
 
 pub use self::test_postgres::test_postgres;
 pub use self::test_mesh::test_mesh;
+
+pub static PG_SCRIPTS_FOLDER: &'static str = concat!(
+    env!("CARGO_MANIFEST_DIR"),
+    "/mesh"
+);
 
 pub const PG_CONNECTION: &str = "postgresql://postgres:!qa2Ws3eD@localhost:5432";
 pub const COMMAND_NAME: &str = "db";

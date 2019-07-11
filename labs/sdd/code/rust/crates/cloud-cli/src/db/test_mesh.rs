@@ -1,18 +1,24 @@
 use futures::{ Future, Stream };
 use tokio_postgres::{connect, NoTls};
+use std::{ fs::read_to_string };
 
-const SQL: &str = include_str!("mesh/db.sql");
+use crate::db::sql::{ SqlConnection, DEFAULT_PG };
 
-pub fn test_mesh() {
+fn test_mesh_script(sql_script: &'static str) {
     let fut = connect(super::PG_CONNECTION, NoTls)
-        .and_then(|(mut client, connection)| {
+        .and_then(move |(mut client, connection)| {
             let connection = connection
                 .map_err(|e| eprintln!("connection error: {}", e))
             ;
 
             tokio::spawn(connection);
 
-            client.simple_query(SQL).collect()
+            let path_to_sql = format!("{}{}", super::PG_SCRIPTS_FOLDER, sql_script);
+            let sql = &read_to_string(&path_to_sql).unwrap();
+
+            println!("MESH: Deploying {}", sql_script);
+
+            client.simple_query(&sql).collect()
         })
         .map(|_| {
             println!("MESH: Schema deployed");
@@ -23,41 +29,19 @@ pub fn test_mesh() {
     ;
 
     tokio::run(fut);
+}
 
-    // let fut =
-    //     connect(super::PG_CONNECTION, NoTls)
+static PG_FILES: &'static [&'static str] = &[
+    "/clean.sql"
+];
 
-    //     // .map(|(client, connection)| {
-    //     //     let connection = connection
-    //     //         .map_err(|e| eprintln!("connection error: {}", e))
-    //     //     ;
+pub fn test_mesh() {
+    //TASK:test_mesh_script(PG_FILES[0]);
 
-    //     //     tokio::spawn(connection);
+    let connection = SqlConnection {
+        password: "!qa2Ws3eD",
+        ..DEFAULT_PG
+    };
 
-    //     //     client
-    //     // })
-
-    //     // .and_then(|mut client| {
-    //     //     client
-    //     //         .prepare(SQL)
-    //     //         .map(|statement| (client, statement))
-    //     // })
-
-    //     // .and_then(|(mut client, statement)| {
-    //     //     client
-    //     //         .execute(&statement, &[])
-    //     // })
-
-    //     // .map(|rows| {
-    //     //     println!("Rows affected: \"{}\"", rows);
-    //     // })
-
-    //     .map_err(|e| {
-    //         eprintln!("error: {}", e);
-    //     })
-    // ;
-
-    // // By default, tokio_postgres uses the tokio crate as its runtime.
-    // println!("Starting...");
-    // tokio::run(fut);
+    println!("Connection: {}", connection);
 }
