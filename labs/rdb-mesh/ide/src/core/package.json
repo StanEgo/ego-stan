@@ -1,0 +1,14 @@
+{
+  "name": "@ide/core",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.1.6"
+  }
+}

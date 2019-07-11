@@ -1,0 +1,9 @@
+{
+  "name": "@ide/mesh",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.1.6"
+  }
+}
