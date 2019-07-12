@@ -7,22 +7,13 @@
     @statement {id} is an {entity}.
  */
 CREATE TABLE mesh.entity (
-    id mesh.id NOT NULL,
-        CONSTRAINT pk_mesh_eneity PRIMARY KEY(id),
+    id mesh.id NOT NULL DEFAULT mesh.id_new(),
+        CONSTRAINT pk_mesh_entity PRIMARY KEY(id),
 
-	-- Natural name of the entity. May be temporary.
+	-- Natural name of the entity. Probably a temporary field for convenience.
 	name text NULL,
 
-	prototype smallint NOT NULL,
-		CONSTRAINT
-			fk_mesh_entity_prototype
-		FOREIGN KEY (
-			prototype
-		) REFERENCES mesh.prototype (
-			id
-		),
-
-	owner mesh.id NOT NULL,
+	owner mesh.id NULL,
 		CONSTRAINT
 			fk_mesh_entity_owner
 		FOREIGN KEY(
