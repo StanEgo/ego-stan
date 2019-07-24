@@ -1,0 +1,6 @@
+{
+	"name": "@stanego/workspaces",
+	"private": true,
+	"workspaces": [
+	]
+}
