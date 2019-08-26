@@ -15,6 +15,11 @@ const withMDX = require("@next/mdx")({
 
 const withCSS = require("@zeit/next-css")
 
+const nextConfig = {
+	distDir: ".build",
+	outDir: ".out"
+};
+
 module.exports = withPlugins([
 	[ withCSS, {
 		// This settings required to import CSS files from packages.
@@ -27,4 +32,4 @@ module.exports = withPlugins([
 	[ withMDX, {
 		pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"]
 	}]
-])
+], nextConfig);
