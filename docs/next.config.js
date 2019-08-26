@@ -1,11 +1,13 @@
 const withPlugins = require('next-compose-plugins');
 
+const css = require("@zeit/next-css")
+const sass = require("@zeit/next-sass")
+
 const images = require("remark-images")
 const emoji = require("remark-emoji")
 const math = require("remark-math")
 const katex = require("rehype-katex")
-
-const withMDX = require("@next/mdx")({
+const mdx = require("@next/mdx")({
 	extension: /\.(md|mdx)$/,
 	options: {
 		remarkPlugins: [ images, emoji, math ],
@@ -13,15 +15,13 @@ const withMDX = require("@next/mdx")({
 	}
 })
 
-const withCSS = require("@zeit/next-css")
-
 const nextConfig = {
 	distDir: ".build",
 	outDir: ".out"
 };
 
 module.exports = withPlugins([
-	[ withCSS, {
+	[ css, {
 		// This settings required to import CSS files from packages.
 		// For example: import "katex/dist/katex.css"
 		cssLoaderOptions: {
@@ -29,7 +29,9 @@ module.exports = withPlugins([
 		}
 	}],
 
-	[ withMDX, {
+	sass,
+
+	[ mdx, {
 		pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"]
 	}]
 ], nextConfig);

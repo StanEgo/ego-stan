@@ -1,0 +1,19 @@
+$golden: 1.618;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap&subset=cyrillic');
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 5% 10%;
+    display: flex;
+    font-family: Montserrat, "Trebuchet MS", Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: $golden;
+}
+
+h1 {
+    font-size: 64px;
+}
