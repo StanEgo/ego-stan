@@ -9,11 +9,23 @@ html {
 body {
     margin: 5% 10%;
     display: flex;
+
     font-family: Montserrat, "Trebuchet MS", Helvetica, sans-serif;
     text-rendering: optimizeLegibility;
     line-height: $golden;
+
+    background-color: #fdfbfb;
+    background: linear-gradient(to right, #fdfbfb 0%, #ebedee 100%);
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+h2.whale::first-letter {
+    color: #c00;
 }
